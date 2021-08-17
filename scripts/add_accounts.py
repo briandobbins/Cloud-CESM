@@ -121,7 +121,7 @@ def main():
     arguments = sys.argv
 
     # And overwrite the name of this program with the defaults:
-    arguments[0] = 'https://github.com/NCAR/Cloud-CESM/defaults/users.csv'
+    arguments[0] = 'https://raw.githubusercontent.com/NCAR/Cloud-CESM/master/defaults/users.csv'
 
     for arg in arguments:
         try:
