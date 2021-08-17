@@ -74,7 +74,7 @@ def AddUser(userdata):
     if account and not AccountExists(account):
         # First, if the group doesn't exist, add it:
         if not GroupExists(group):
-            command = "groupadd -g " + group
+            command = "groupadd " + group
             os.system(command)
 
         # Check if the shell is either 'bash' or 'tcsh', or '/bin/bash', or '/bin/tcsh'
