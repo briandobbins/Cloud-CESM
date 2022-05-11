@@ -15,7 +15,7 @@ else
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/os.sh
   sh os.sh > /opt/ncar/config/os.log
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/conda.sh
-  sh opt_ncar.sh > /opt/ncar/config/conda.log
+  sh conda.sh > /opt/ncar/config/conda.log
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/intel.sh
   sh intel.sh > /opt/ncar/config/intel.log
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/opt_ncar.sh
