@@ -6,6 +6,7 @@ import json
 from passlib.hash import sha512_crypt
 import pwd
 import grp
+import os
 
 
 
@@ -38,7 +39,7 @@ def adduser(username, data, head):
         except KeyError:
             print("Creating group: ", group)
             groupcommand = "groupadd " + group
-            #os.system(groupcommand)
+            os.system(groupcommand)
 
     # Now add the groups to the command:
     command += ' -g ' + data['groups'][0]
@@ -52,7 +53,7 @@ def adduser(username, data, head):
         command += ' -M '
 
 
-    #os.system(command)
+    os.system(command)
     print(username, " => ", data['password'])
     #print("User Command: ", command)
 
