@@ -10,3 +10,5 @@ yum -y install perl-XML-LibXML gcc-gfortran gcc-c++ dnf-plugins-core python3 per
 #ln -s /usr/bin/python3 /usr/bin/python
 
 
+
+
