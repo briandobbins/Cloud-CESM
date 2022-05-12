@@ -9,8 +9,8 @@ if [[ "compute" == $2 ]]; then
   aws s3 cp $1/config.json .
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/users.py .
   /opt/ncar/conda/bin/python3 users.py config.json compute > users.log
-  #wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/environment.sh
-  #sh environment.sh > environment.log
+  wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/environment.sh
+  sh environment.sh > environment.log
 else
   mkdir -p /opt/ncar/config
   chmod go-rwx /opt/ncar/config
