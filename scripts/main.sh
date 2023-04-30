@@ -27,8 +27,8 @@ else
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/environment.sh
   sh environment.sh > /opt/ncar/config/environment.log
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/glade_symlink.sh
-  sh glade_symlink.sh > environment.log
+  sh glade_symlink.sh > /opt/ncar/config/symlink.log
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/users.py 
   aws s3 cp $1/config.json .
-  #/opt/ncar/conda/bin/python3 users.py config.json head > users.log
+  /opt/ncar/conda/bin/python3 users.py config.json head > users.log
 fi
