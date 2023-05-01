@@ -31,6 +31,6 @@ else
   wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/users.py 
   aws s3 cp $1/config.json .
   /opt/ncar/conda/bin/python3 users.py config.json head > users.log
-  wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/jupyterhub.sh
-  sh jupyterhub.sh > /opt/ncar/config/jupyterhub.log
+  #wget https://raw.githubusercontent.com/briandobbins/Cloud-CESM/master/scripts/jupyterhub.sh
+  #sh jupyterhub.sh > /opt/ncar/config/jupyterhub.log
 fi
